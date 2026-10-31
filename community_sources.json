@@ -1,0 +1,164 @@
+[
+  {
+    "name": "IPLocate validated feed — HTTP",
+    "url": "https://raw.githubusercontent.com/iplocate/free-proxy-list/main/protocols/http.txt",
+    "protocol": "http",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/iplocate/free-proxy-list",
+    "review_note": "Provider publishes protocol-specific feeds, 30-minute update claims; raw HTTP/SOCKS files observed with 200 status."
+  },
+  {
+    "name": "IPLocate validated feed — SOCKS4",
+    "url": "https://raw.githubusercontent.com/iplocate/free-proxy-list/main/protocols/socks4.txt",
+    "protocol": "socks4",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/iplocate/free-proxy-list",
+    "review_note": "Provider publishes protocol-specific feeds, 30-minute update claims; raw HTTP/SOCKS files observed with 200 status."
+  },
+  {
+    "name": "IPLocate validated feed — SOCKS5",
+    "url": "https://raw.githubusercontent.com/iplocate/free-proxy-list/main/protocols/socks5.txt",
+    "protocol": "socks5",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/iplocate/free-proxy-list",
+    "review_note": "Provider publishes protocol-specific feeds, 30-minute update claims; raw HTTP/SOCKS files observed with 200 status."
+  },
+  {
+    "name": "Thordata daily / 6-hour verification — HTTP",
+    "url": "https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/http.txt",
+    "protocol": "http",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/Thordata/awesome-free-proxy-list",
+    "review_note": "MIT-licensed project; separate protocol paths observed with 200 status. Third-party aggregation may overlap existing feeds."
+  },
+  {
+    "name": "Thordata daily / 6-hour verification — SOCKS4",
+    "url": "https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/socks4.txt",
+    "protocol": "socks4",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/Thordata/awesome-free-proxy-list",
+    "review_note": "MIT-licensed project; separate protocol paths observed with 200 status. Third-party aggregation may overlap existing feeds."
+  },
+  {
+    "name": "Thordata daily / 6-hour verification — SOCKS5",
+    "url": "https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/socks5.txt",
+    "protocol": "socks5",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/Thordata/awesome-free-proxy-list",
+    "review_note": "MIT-licensed project; separate protocol paths observed with 200 status. Third-party aggregation may overlap existing feeds."
+  },
+  {
+    "name": "ProxyGenerator MostStable — HTTP",
+    "url": "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/MostStable/http.txt",
+    "protocol": "http",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/proxygenerator1/ProxyGenerator",
+    "review_note": "MIT-licensed checked/stability-tiered project. MostStable selected to limit speculative probe volume."
+  },
+  {
+    "name": "ProxyGenerator MostStable — SOCKS4",
+    "url": "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/MostStable/socks4.txt",
+    "protocol": "socks4",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/proxygenerator1/ProxyGenerator",
+    "review_note": "MIT-licensed checked/stability-tiered project. MostStable selected to limit speculative probe volume."
+  },
+  {
+    "name": "ProxyGenerator MostStable — SOCKS5",
+    "url": "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/MostStable/socks5.txt",
+    "protocol": "socks5",
+    "format": "plain",
+    "enabled": true,
+    "upstream": "https://github.com/proxygenerator1/ProxyGenerator",
+    "review_note": "MIT-licensed checked/stability-tiered project. MostStable selected to limit speculative probe volume."
+  },
+  {
+    "name": "HProxy opt-in — HTTP",
+    "url": "https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/http.txt",
+    "protocol": "http",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/hproxy-com/free-proxy-list",
+    "review_note": "Large public-source aggregation; high overlap risk. Disabled until sole-source yield is measured."
+  },
+  {
+    "name": "HProxy opt-in — SOCKS4",
+    "url": "https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/socks4.txt",
+    "protocol": "socks4",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/hproxy-com/free-proxy-list",
+    "review_note": "Large public-source aggregation; high overlap risk. Disabled until sole-source yield is measured."
+  },
+  {
+    "name": "HProxy opt-in — SOCKS5",
+    "url": "https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/socks5.txt",
+    "protocol": "socks5",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/hproxy-com/free-proxy-list",
+    "review_note": "Large public-source aggregation; high overlap risk. Disabled until sole-source yield is measured."
+  },
+  {
+    "name": "KangProxy opt-in — HTTP",
+    "url": "https://raw.githubusercontent.com/officialputuid/KangProxy/main/http/http.txt",
+    "protocol": "http",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/officialputuid/KangProxy",
+    "review_note": "Frequent updates; no clear data redistribution terms in retrieved README. Disabled by default."
+  },
+  {
+    "name": "KangProxy opt-in — SOCKS4",
+    "url": "https://raw.githubusercontent.com/officialputuid/KangProxy/main/socks4/socks4.txt",
+    "protocol": "socks4",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/officialputuid/KangProxy",
+    "review_note": "Frequent updates; no clear data redistribution terms in retrieved README. Disabled by default."
+  },
+  {
+    "name": "KangProxy opt-in — SOCKS5",
+    "url": "https://raw.githubusercontent.com/officialputuid/KangProxy/main/socks5/socks5.txt",
+    "protocol": "socks5",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/officialputuid/KangProxy",
+    "review_note": "Frequent updates; no clear data redistribution terms in retrieved README. Disabled by default."
+  },
+  {
+    "name": "GetFreeProxy wiki opt-in — HTTP",
+    "url": "https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/http.txt",
+    "protocol": "http",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/gfpcom/free-proxy-list",
+    "review_note": "Very large public aggregator; high overlap and performance impact. Enabled only after source novelty review."
+  },
+  {
+    "name": "GetFreeProxy wiki opt-in — SOCKS4",
+    "url": "https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks4.txt",
+    "protocol": "socks4",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/gfpcom/free-proxy-list",
+    "review_note": "Very large public aggregator; high overlap and performance impact. Enabled only after source novelty review."
+  },
+  {
+    "name": "GetFreeProxy wiki opt-in — SOCKS5",
+    "url": "https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks5.txt",
+    "protocol": "socks5",
+    "format": "plain",
+    "enabled": false,
+    "upstream": "https://github.com/gfpcom/free-proxy-list",
+    "review_note": "Very large public aggregator; high overlap and performance impact. Enabled only after source novelty review."
+  }
+]

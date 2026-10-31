@@ -1,0 +1,30 @@
+services:
+  scrapoxy:
+    # The upstream Docker tags now contain a discontinued-service placeholder.
+    image: proxyhunter/scrapoxy:4.24.2-local
+    build:
+      context: .scrapoxy/source
+      dockerfile: ../../Dockerfile.scrapoxy
+    restart: unless-stopped
+    mem_limit: 512m
+    # This limits the Scrapoxy service, not ProxyHunter Python workers or Docker Desktop.
+    cpus: ${SCRAPOXY_CPU_LIMIT:-0.50}
+    deploy:
+      resources:
+        limits:
+          cpus: "${SCRAPOXY_CPU_LIMIT:-0.50}"
+          memory: 512M
+        reservations:
+          memory: 256M
+    ports:
+      - "127.0.0.1:8888:8888"
+      - "127.0.0.1:8890:8890"
+    env_file:
+      - .scrapoxy/service.env
+    environment:
+      NODE_ENV: production
+      NODE_OPTIONS: "--max-old-space-size=320"
+      STORAGE_FILE_FILENAME: /cfg/scrapoxy.json
+      FINGERPRINT_URL: https://api.ipify.org/?format=json
+    volumes:
+      - ./.scrapoxy/data:/cfg
