@@ -1,13 +1,13 @@
-<div align="center">
-
 # ProxyHunterOMEGA
 
 **Experimental desktop proxy-source research and validation tool**  
 **Work in progress — not recommended for using harvested proxies**
 
-![ProxyHunter Omega desktop interface](assets/desktop_preview.png)
+## Desktop GUI
 
-</div>
+![ProxyHunterOMEGA amber desktop command deck](assets/desktop_preview.png)
+
+*Screenshot of the native desktop interface; live hunt data is shown in a separate terminal.*
 
 ProxyHunterOMEGA is a Python/Tkinter desktop launcher for a terminal-based pipeline that collects **publicly listed proxy candidates**, checks their connectivity, and records network metadata. It is primarily a **research and testing project**, not a dependable proxy service.
 
