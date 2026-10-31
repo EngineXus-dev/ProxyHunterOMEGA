@@ -1,0 +1,45 @@
+# Private runtime data and credentials — NEVER commit
+.cache/
+.scrapoxy/
+.env
+.env.*
+!.env.example
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+
+# Generated proxy lists, run output, profiles, audit files
+all_confirmed_live*.txt
+other_live*.txt
+isp_network_candidates_live*.txt
+carrier_network_candidates_live*.txt
+potential_residential_live*.txt
+potential_mobile_live*.txt
+clean_*verified.txt
+clean_residential_mobile_combined.txt
+NewProxies
+Clean/
+results/
+exports/
+*latest_results.json
+*latest_hunt.json
+*interrupted_results.json
+*threat_intelligence_audit.json
+source_audit.json
+*.log
+
+# Temporary/editor/build files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+node_modules/
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.zip
