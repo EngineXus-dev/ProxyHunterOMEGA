@@ -133,12 +133,14 @@ def gateway_exit(port, cancelled=None):
                 try:
                     value = response.json()["ip"]
                 except (ValueError, KeyError, TypeError):
-                    value = response.text.strip()
+                    # Plain-text IP echo responses are ASCII. Do not rely on
+                    # requests' automatic charset detection for short strings.
+                    value = response.content.decode("ascii").strip()
                 address = ipaddress.ip_address(value)
                 if not address.is_global:
                     raise ValueError("VPN gateway did not return a public exit address")
                 return str(address)
-            except (requests.RequestException, ValueError) as exc:
+            except (requests.RequestException, ValueError, UnicodeError) as exc:
                 last_error = exc
     raise last_error
 
