@@ -1,7 +1,7 @@
 # ProxyHunterOMEGA
 
 **Experimental desktop proxy-source research and validation tool**  
-**Work in progress — not recommended for using harvested proxies**
+**Experimental — not recommended for using harvested proxies**
 
 ## Desktop GUI
 
